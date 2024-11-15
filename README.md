@@ -22,8 +22,11 @@
    ```bash
    cd backend
    ```
-
-2. **Run the FastAPI server**:
+2. **Install Requirements**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. **Run the FastAPI server**:
    ```bash
    uvicorn main:app --reload
    ```
