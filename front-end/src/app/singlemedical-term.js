@@ -163,7 +163,7 @@ export default function MedicalTerm() {
         {/* Right Side: Display Selected Word's Definition and Image */}
         {pdfText && (
           <div className="w-[40%] p-4 border border-black rounded-md">
-            {language === 'ta' && <p className="text-[13px] font-semibold mb-3">
+            {language !== 'en' && <p className="text-[13px] font-semibold mb-3">
               {selectedWord ? selectedWord.charAt(0).toUpperCase() + selectedWord.slice(1) : ''}
             </p>}
             <h2 className="text-xl font-semibold mb-4">
@@ -192,6 +192,10 @@ export default function MedicalTerm() {
                     >
                       <option value="en">English</option>
                       <option value="ta">Tamil</option>
+                      <option value="hi">Hindi</option>
+                      <option value="ml">Malayalam</option>
+                      <option value="te">Telugu</option>
+                      {/* <option value="kn">Kannada</option> */}
                     </select>
                   </div>
                 </>
