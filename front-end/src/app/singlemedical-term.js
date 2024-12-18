@@ -173,7 +173,7 @@ export default function MedicalTerm() {
               {selectedDefinition ? (
                 <>
                   <p>{selectedDefinition}</p>
-                  {selectedImage && (
+                  {selectedImage !== null && (
                     <div className="mt-4">
                       <img
                         src={selectedImage}
